@@ -1,0 +1,25 @@
+import datetime as dt
+
+class Phones:
+    def __init__(self, name, cpu, price):
+        self.name = name 
+        self.price = price
+        self.cpu = cpu
+
+    def checktime(self):
+       print(dt.datetime.now().time())
+
+class Iphone(Phones):
+    
+    def introduce(self):
+        print("Made by Apple")
+
+class Samsung(Phones):
+    def introduce(self):
+        print("Made by Android")
+
+iphone = Iphone("iphone13", "A16 Bionic", 27000)
+samsung = Samsung("SamsungGalaxy", "Snapdragon", 17000)
+
+iphone.introduce()
+samsung.introduce()
