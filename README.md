@@ -1,4 +1,4 @@
-# Hi, I'm Jhames Andrew S. Santos 👋
+# Hi, I'm Jhames Andrew S. Santos 
 
 Aspiring Software Engineer focused on Cloud.
 
