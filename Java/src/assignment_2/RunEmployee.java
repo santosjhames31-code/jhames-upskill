@@ -12,8 +12,8 @@ public class RunEmployee{
         e3.computeSalary(8, 500);
          
         e1.updateSalary(500);
-        e2.updateSalary(500, true);
-        e3.updateSalary(1000, true);
+        e2.updateSalary(20, true);
+        e3.updateSalary(1000, false);
         
         e1.displayInfo();
         e2.displayInfo();

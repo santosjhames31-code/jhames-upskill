@@ -36,11 +36,18 @@ class Employee{
 
     public void updateSalary(double amount, boolean isPercentage){
         double initSalary = salary;
-        if (isPercentage) salary += salary * 0.20;
-        else salary += amount;
+        String txt = null;
+        if(isPercentage){
+            salary += salary * (amount / 100);
+            txt = (int) amount + "%";
+        }else{
+            salary += amount;
+            txt = "PHP " + amount;
+        }
         System.out.println("==========================================================================================================================================");
-        System.out.println("Congrats user " + id + " you successfully updated your salary from PHP " + initSalary + " to PHP " + salary + " (20% of initial salary)");
-        System.out.println("==========================================================================================================================================");    }
+        System.out.println("Congrats user " + id + " you successfully updated your salary from PHP " + initSalary + " to PHP " + salary + " with additional " + txt);
+        System.out.println("==========================================================================================================================================");
+    }
 
     public double computeSalary(double hoursWorked, double ratePerHour){
         this.hoursWorked = hoursWorked;
@@ -102,7 +109,7 @@ class Employee{
         this.ratePerHour = ratePerHour;
     }
 
-    static int getEmployeeCount(){
+    public static int getEmployeeCount(){
         return employeeCount;
     }
 
