@@ -5,16 +5,14 @@ class Node{
     Node next;
 }
 
-class Stacks_LinkedList {
+class LinkedLists{
     Node top;
 
     void push(int data){
         Node node = new Node();
         node.data = data;
         node.next = top;
-
         top = node;
-
     }
 
     void display(){
@@ -24,14 +22,40 @@ class Stacks_LinkedList {
             t = t.next;
         }
     }
+    
+    boolean isEmpty(){
+        return top == null; 
+    }
+
+    int peek(){
+        return top.data;
+    }
+
+    void pop(){
+       
+       if (isEmpty()) System.out.println("The Stacks is empty");
+       else {
+            int data = top.data;
+            top = top.next;
+       }
+    }
+    
+
+
 }
 
-
-class Main{
+public class Stacks_LinkedList{
     public static void main(String[] args) {
-        Stacks_LinkedList sl = new Stacks_LinkedList();
-        sl.push(1);
+        
+        
 
-        sl.display();
+        LinkedLists ll = new LinkedLists();
+
+        ll.push(2);
+        ll.push(3);
+        ll.push(4);
+        
+        ll.display();
+
     }
 }
