@@ -18,5 +18,12 @@
         }
     ],
     "java.debug.settings.onBuildFailureProceed": true,
-    "python-envs.defaultEnvManager": "ms-python.python:system"
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python-envs.pythonProjects": [
+        {
+            "path": "Python/Fundamentals/GUI",
+            "envManager": "ms-python.python:system",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
 }
