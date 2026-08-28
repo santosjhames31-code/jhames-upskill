@@ -9,7 +9,7 @@ class MainWindow(QMainWindow):
         self.setGeometry(700, 200, 300, 200)
         self.setWindowIcon(QIcon("images.png"))
 
-        label = QLabel("Hello Wolrd", self)
+        label = QLabel("Hello World", self)
         label.setFont(QFont("Consolas", 20))
         label.setGeometry(0, 0, 500, 100)
         label.setStyleSheet("color: Blue;"
