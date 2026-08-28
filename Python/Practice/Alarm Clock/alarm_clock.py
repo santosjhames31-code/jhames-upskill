@@ -3,10 +3,6 @@ import datetime
 import time as t
 import pygame
 
-
-
-
-
 def set_alarm(alarm_time):
     sound = "sound.mp3"
     print("-- Alarm Clock -- ")
