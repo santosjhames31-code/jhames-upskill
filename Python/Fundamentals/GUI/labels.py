@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
-from PyQt5.QtGui import QFont
-from PyQt5.QtCore import Qt
+from PyQt5.QtGui import QFont #for fontstyle and size
+from PyQt5.QtCore import Qt #for font alignment
 
 class MainWindow(QMainWindow):
     def __init__(self):
@@ -18,7 +18,7 @@ class MainWindow(QMainWindow):
 
         label.setAlignment(Qt.AlignTop)
         label.setAlignment(Qt.AlignVCenter)
-        
+
 def main():
     app = QApplication(sys.argv)
     window = MainWindow()
