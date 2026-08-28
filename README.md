@@ -10,4 +10,4 @@ Aspiring Software Engineer focused on Cloud.
 - Java, , MySQL, Git/GitHub, Linux
 
 ## Currently Learning
-- Python (File IO)
+- Python (GUI)
