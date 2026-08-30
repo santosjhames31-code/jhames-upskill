@@ -1,18 +1,23 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton
 from PyQt5.QtGui import QFont
+from PyQt5.QtCore import Qt
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.setGeometry(700, 200, 300, 400) #window geometry
-        self.initUI() 
-
+       
         self.label = QLabel("Button still not clicked", self)
-        self.label.setGeometry(700, 100, 300, 400)
+        self.label.setGeometry(0, 0, 300, 500)
         self.label.setFont(QFont("Consolas"))
-        self.label.setStyleSheet("font: 24px;"
-                                 "font-weight: bold;"
+        self.label.setStyleSheet("font: 16px;"
+                                 "font-weight: bold;" 
+                                 "font-background: gray;"
                                  )
+        self.label.setAlignment(Qt.AlignHCenter)
+        self.label.setAlignment(Qt.AlignVCenter)
+        self.initUI() 
 
     def initUI(self):
         self.button = QPushButton("Click me!", self) #create button
