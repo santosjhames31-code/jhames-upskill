@@ -39,4 +39,3 @@ while True:
         print("Please enter an integer value")
 
 set_alarm(f"{hours:02d}:{minutes:02d}:{seconds:02d}")
-

@@ -8,7 +8,7 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setGeometry(700, 200, 300, 400) #window geometry
        
-        self.label = QLabel("Button still not clicked", self)
+        self.label = QLabel("Button still not clicked", self) #created a label text
         self.label.setGeometry(0, 0, 300, 500)
         self.label.setFont(QFont("Consolas"))
         self.label.setStyleSheet("font: 16px;"
@@ -20,7 +20,7 @@ class MainWindow(QMainWindow):
         self.initUI() 
 
     def initUI(self):
-        self.button = QPushButton("Click me!", self) #create button
+        self.button = QPushButton("Click me!", self)    #create button
         self.button.setGeometry(30, 30, 100, 50)        #button geometry
         self.button.setStyleSheet("font-size: 16px;"
                              "color: white;"
@@ -29,9 +29,9 @@ class MainWindow(QMainWindow):
         self.button.clicked.connect(self.on_click)                    
     def on_click(self):
         print("Clicked")
-        self.button.setText("Clicked")
-        self.label.setText("Ur gay")
-        self.button.setDisabled(True)
+        self.button.setText("Clicked")  #override button
+        self.label.setText("Ur gay")    #override label
+        self.button.setDisabled(True)   #button disabled after clicking
 
 def main():
     app = QApplication(sys.argv)
