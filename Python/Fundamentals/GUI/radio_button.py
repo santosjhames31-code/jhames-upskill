@@ -35,7 +35,7 @@ class MainWindow(QMainWindow):
 
         self.radio4.setGeometry(10, 250, 300, 50)
         self.radio5.setGeometry(10, 300, 300, 50)
-        self.radio6.setGeometry(10, 250, 300, 50)
+        self.radio6.setGeometry(10, 350, 300, 50)
 
         self.group1.addButton(self.radio1) #added buttons 1, 2, and 3 to group 1 
         self.group1.addButton(self.radio2)
@@ -44,8 +44,6 @@ class MainWindow(QMainWindow):
         self.group2.addButton(self.radio4) #added buttons 4, 5, and 6 to group 2 
         self.group2.addButton(self.radio5)
         self.group2.addButton(self.radio6)
-
-        
         
         self.setStyleSheet(
                     "QLabel{"
@@ -60,6 +58,19 @@ class MainWindow(QMainWindow):
                     "color: white;"
                     "padding: 10px;"
                     "}")
+
+        self.radio1.toggled.connect(self.radio_button_changed)
+        self.radio2.toggled.connect(self.radio_button_changed)
+        self.radio3.toggled.connect(self.radio_button_changed)
+        self.radio4.toggled.connect(self.radio_button_changed)
+        self.radio5.toggled.connect(self.radio_button_changed)
+        self.radio6.toggled.connect(self.radio_button_changed)
+
+    def radio_button_changed(self):
+        radio_sender = self.sender()
+        if radio_sender.isChecked():
+            print(f"{radio_sender.text()} is selected")
+
         
 def main():
     app = QApplication(sys.argv)
