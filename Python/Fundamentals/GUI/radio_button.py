@@ -11,7 +11,9 @@ class MainWindow(QMainWindow):
         label.setStyleSheet("color: black;"
                             "font-weight: bold;"
                             "font-size: 20px;")
+        self.initUI()
         
+    def initUI(self):        
         radio1 = QRadioButton("Ayaw niya na", self)
         radio1.setGeometry(50, 60, 300, 50)
         radio1.setStyleSheet("font-size: 20px;"
