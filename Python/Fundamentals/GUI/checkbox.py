@@ -15,6 +15,10 @@ class MainWindow(QMainWindow):
                                     "font-weight: bold;"
                                     "color: white;")
         self.checkbox.setGeometry(5, 5, 200, 50)
+        self.checkbox.stateChanged.connect(self.checked)
+
+    def checked(self):
+        print("Wallahi")
 
 def main():
     app = QApplication(sys.argv)
