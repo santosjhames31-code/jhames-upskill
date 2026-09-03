@@ -7,8 +7,6 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.initUI()
 
-    
-
     def initUI(self):
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
