@@ -1,13 +1,16 @@
 # Hi, I'm Jhames Andrew S. Santos 
 
-Aspiring Software Engineer focused on Cloud.
+IT student building toward Cloud/DevOps engineering
 
 ## About Me
+- Sophomore
 - Studying Information Technology in Bulacan State University - Malolos Campus
 - Reach me: santosjhames31@gmail.com
 
 ## Skills
-- Java, , MySQL, Git/GitHub, Linux
+**Languages:** Java, Python
+**Tools:** MySQL, Git/GitHub, Linux
 
 ## Currently Learning
-- Python (GUI)
+- Amazon Web Services (AWS)
+
